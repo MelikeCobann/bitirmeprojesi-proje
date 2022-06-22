@@ -20,7 +20,7 @@ export default {
 .container {
   width: 90%;
   max-width: 960px;
-  margin: 150px auto;
+ margin: auto;
   border-radius: 7px;
   box-shadow: 2px 4px 6px rgba(28, 6, 49, 0.1);
   background: white;

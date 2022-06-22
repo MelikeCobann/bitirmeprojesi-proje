@@ -74,10 +74,12 @@ export default {
 <style scoped>
 
 #btn1{
-  background:#487007;
+  background:#E4E9BE;
+  margin: 5px;
+  
 }
 .kapsayici{
- background:#9DAB86;
+  background:#9DAB86;
  border-radius: 30px;
 }
 
@@ -121,7 +123,8 @@ button{
   height: 50%;
   float: left;
   margin-left: 25px;
-  background-color: rgb(59, 44, 137);
+  background-color: #E4E9BE;
+  border-radius: 25px;
 }
 
 

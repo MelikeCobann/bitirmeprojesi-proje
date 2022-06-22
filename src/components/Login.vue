@@ -43,8 +43,11 @@ export default {
   max-width: 960px;
   margin: 50px auto;
   border-radius: 7px;
-  box-shadow: 2px 4px 6px rgba(28, 6, 49, 0.1);
+  box-shadow: 2px 4px 6px rgb(227, 208, 208);
   background: white;
+  
+
+
   
 }
 

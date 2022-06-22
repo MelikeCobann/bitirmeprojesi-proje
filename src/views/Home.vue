@@ -1,18 +1,19 @@
 <template>
+ <div id="resim">
+ <img src="../resim/yeni_logo.png" />
+  </div> <h2 id="nt">Not Gönderme Platformu</h2>
   <div class="home1 container">
-    <h2>Not Gönderme Platformu</h2>
+   
     <div v-if="uyeMi">
       <Login @login="chatBasla" />
-      <p>Üye olmak için <span @click="uyeMi=false">Üye Ol</span> sayfasına gidiniz</p>
+      <p id="uye">Üye olmak için <span @click="uyeMi=false">Üye Ol</span> sayfasına gidiniz</p>
     </div>
     <div v-else>
-      <Register @register="chatBasla" />
-      <p>Giriş yapmak için <span @click="uyeMi=true">Giriş</span> sayfasına gidiniz</p>
+      <Register @register="anaSayfa" />
+      <p id="grs">Giriş yapmak için <span @click="uyeMi=true">Giriş</span> sayfasına gidiniz</p>
     </div>
   </div>
-  <div id="resim">
- <img src="../resim/yeni_logo.png" />
-  </div>
+ 
 </template>
 
 <script>
@@ -41,6 +42,18 @@ export default {
 </script>
 
 <style scoped>
+#nt{
+ text-align: center;
+ font-size: 30px;
+ margin-top: 100px;
+
+}
+#uye{
+  text-align: center;
+}
+#grs{
+  text-align: center;
+}
 body{
   background-color: cadetblue;
 }
@@ -49,6 +62,9 @@ body{
 }
 .home1{
   text-align: left;
+    box-shadow: 10px 10px 10px rgb(220, 204, 204);
+  background: rgb(241, 237, 237);
+
 
 }
 span {

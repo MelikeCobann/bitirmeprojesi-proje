@@ -1,10 +1,12 @@
 <template>
+ <div id="foto">
+ <img src="../resim/yeni_logo.png" /></div>
 <div id="formStyle">
-<h3>Toplantı Ekle</h3>
+<h3 id="tyazi">Toplantı Ekle</h3>
   <form @submit.prevent="toplantiEkle">
-    <label>Başlık : </label>
+    <label id="baslik">Başlık : </label>
     <input v-model="baslik" type="text" required/>
-    <label>Konu : </label>
+    <label id="konu1">Konu : </label>
     <input v-model="konu" type="text" required/>
     <button>Toplantı Ekle</button>
 
@@ -45,15 +47,31 @@ export default {
 </script>
 
 <style>
+#foto{
+     margin-left: 650px;
+}
+#baslik{
+    color: black;
+}
+#tyazi{
+     font-size:25px;
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+#konu1{
+    color: black;
+}
 #formStyle{
     width:500px;
     height:100%;
     margin:auto;
 }
 form{
-    background: white;
+    background:#9DAB86;
     padding:20px;
     border-radius:10px;
+    width:520px;
 }
 label{
     display:block;
@@ -82,7 +100,7 @@ textarea{
 form button{
     display:block;
     margin: 20px auto 0;
-    background: #00ce89;
+    background: #ca00a2;
     color:white;
     padding:10px;
     border:0;

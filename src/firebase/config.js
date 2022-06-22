@@ -3,14 +3,15 @@ import 'firebase/firestore';
 import 'firebase/auth'
 
 
+
 const firebaseConfig = {
-  apiKey: "AIzaSyCucJXVglAG03VVbBww-BlpFhgEJxhFNtM",
-  authDomain: "bitirme-projesi-c1a83.firebaseapp.com",
-  projectId: "bitirme-projesi-c1a83",
-  storageBucket: "bitirme-projesi-c1a83.appspot.com",
-  messagingSenderId: "1066253720456",
-  appId: "1:1066253720456:web:ba7ab7cca5cfbdc3ad783d",
-  measurementId: "G-N262L3SWKX"
+    apiKey: "AIzaSyC6eqJscgGGTzeQS2EhjXouMVv7wPPpC_0",
+    authDomain: "bitirme-projesi-af63f.firebaseapp.com",
+    projectId: "bitirme-projesi-af63f",
+    storageBucket: "bitirme-projesi-af63f.appspot.com",
+    messagingSenderId: "304145385959",
+    appId: "1:304145385959:web:6d0dcdf5b7f03ae9c2d542",
+    measurementId: "G-8XR39Y1ZLB"
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -21,4 +22,3 @@ const auth = firebase.auth()
 
 
 export { db, tarih, auth }
-
